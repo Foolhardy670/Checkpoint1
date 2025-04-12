@@ -52,3 +52,107 @@
        background-color: #004080;
        color: #FFF;
    }
+
+   body {
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       line-height: 1.6;
+       margin: 0;
+       padding: 0;
+       color: #333;
+       background-color: #f7f9fc;
+   }
+
+   header {
+       background-color: #003366;
+       color: white;
+       padding: 2rem;
+       text-align: center;
+   }
+
+   main {
+       padding: 2rem;
+       max-width: 900px;
+       margin: auto;
+   }
+
+   section {
+       margin-bottom: 2.5rem;
+       background: white;
+       padding: 1.5rem;
+       border-left: 5px solid #0055a5;
+       border-radius: 4px;
+       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+   }
+
+   section h2 {
+       color: #0055a5;
+       margin-top: 0;
+   }
+
+   a {
+       color: #0055a5;
+       text-decoration: underline;
+   }
+
+   a:hover {
+       color: #002d59;
+   }
+
+   form {
+       display: flex;
+       flex-direction: column;
+       gap: 1.5rem;
+   }
+
+   fieldset {
+       border: 1px solid #ccc;
+       padding: 1rem;
+       border-radius: 5px;
+       background: #fff;
+   }
+
+   legend {
+       font-weight: bold;
+       padding: 0 0.5rem;
+   }
+
+   label {
+       display: block;
+       margin-bottom: 0.3rem;
+       font-weight: 500;
+   }
+
+   input[type="text"],
+   input[type="email"],
+   select,
+   textarea {
+       width: 100%;
+       padding: 0.5rem;
+       font-size: 1rem;
+       border: 1px solid #aaa;
+       border-radius: 4px;
+       margin-bottom: 1rem;
+   }
+
+   input[type="radio"],
+   input[type="checkbox"] {
+       margin-right: 0.5rem;
+   }
+
+   .form-buttons {
+       display: flex;
+       gap: 1rem;
+   }
+
+   button {
+       background-color: #0055a5;
+       color: white;
+       padding: 0.6rem 1.2rem;
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+   }
+
+   button:hover {
+       background-color: #003d7a;
+   }

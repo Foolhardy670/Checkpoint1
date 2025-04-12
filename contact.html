@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header role="banner">
+        <nav role="navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plain_language.html">Plain Language</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Let’s Connect</h2>
+            <p>
+                I'd love to hear from you! Whether you have a question, feedback, or collaboration idea, fill out the
+                form below.
+                I usually respond within 1–2 business days. Fields marked with an asterisk (*) are required. Please
+                follow any formatting instructions provided.
+            </p>
+
+            <form action="#" method="post" novalidate>
+              
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="name">Full Name*:</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="email">Email Address* (example@example.com):</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="contact-reason">Reason for Contact*:</label>
+                    <select id="contact-reason" name="reason" required>
+                        <option value="">-- Please select --</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="question">General Question</option>
+                        <option value="feedback" selected>Feedback</option>
+                    </select>
+                </fieldset>
+
+         
+                <fieldset>
+                    <legend>Your Message</legend>
+
+                    <label for="message">Message*:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </fieldset>
+
+                
+                <fieldset>
+                    <legend>How did you hear about me?</legend>
+
+                    <label><input type="checkbox" name="source" value="linkedin" /> LinkedIn</label><br />
+                    <label><input type="checkbox" name="source" value="github" /> GitHub</label><br />
+                    <label><input type="checkbox" name="source" value="friend" /> Friend</label><br />
+                    <label><input type="checkbox" name="source" value="other" /> Other</label>
+                </fieldset>
+
+                <!-- Radio Button Question -->
+                <fieldset>
+                    <legend>Preferred Contact Method*</legend>
+
+                    <label><input type="radio" name="contact-method" value="email" required /> Email</label><br />
+                    <label><input type="radio" name="contact-method" value="phone" required /> Phone</label><br />
+                    <label><input type="radio" name="contact-method" value="none" required /> No Preference</label>
+                </fieldset>
+
+                <!-- Submit Buttons -->
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Clear Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Christian Simpore. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
