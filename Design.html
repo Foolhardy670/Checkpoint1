@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design and Accessibility Decisions</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header role="banner">
+        <nav role="navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plain_language.html">Plain Language</a></li>
+                <li><a href="Design.html">Design</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Design and Accessibility Decisions</h1>
+        <section aria-labelledby="intro-heading">
+            <h2 id="intro-heading">Introduction</h2>
+            <p>Good visual design and solid structure are essential for delivering a user-friendly and accessible
+                experience. A well-designed site makes it easier for all users — including those using assistive
+                technologies — to navigate, read, and interact with content. From color contrast to layout flow and
+                semantic structure, each design choice impacts how inclusive your website is.</p>
+        </section>
+
+        <section aria-labelledby="visual-heading">
+            <h2 id="visual-heading">Visual Design</h2>
+
+            <section aria-labelledby="color-heading">
+                <h3 id="color-heading">Color</h3>
+                <p><strong>Why these colors?</strong> My primary color is a deep navy blue (#004080), chosen for its
+                    calm, professional feel and strong contrast on light backgrounds. The secondary color is a soft sky
+                    blue (#cce0ff) for accents, offering a light contrast that feels modern and clean. Tertiary tones
+                    include light grays for neutral backgrounds and section breaks.</p>
+                <p><strong>How were they chosen?</strong> I started by researching accessible color palettes using
+                    contrast checking tools. I then tested combinations in various lighting scenarios and checked WCAG
+                    contrast ratios to ensure legibility.</p>
+                <p><strong>Where they are used?</strong> Primary colors are used in headers, navigation bars, and
+                    footers. Secondary colors are used for highlights and backgrounds. All color combinations meet or
+                    exceed the WCAG AA standard (4.5:1 contrast ratio).</p>
+            </section>
+
+            <section aria-labelledby="typography-heading">
+                <h3 id="typography-heading">Typography</h3>
+                <p><strong>Font choices:</strong> I chose Arial and Helvetica for body text because they are sans-serif
+                    fonts known for clarity and high legibility across devices. Headers use a bolder version of the same
+                    font to maintain consistency and structure.</p>
+                <p><strong>Sizing and weight:</strong> The base font size is 16px for comfortable readability, with
+                    headers ranging from 24px to 36px depending on level. I use bold weights (600–700) for section
+                    headers to provide strong visual hierarchy. Color contrast is ensured against backgrounds.</p>
+            </section>
+        </section>
+
+        <section aria-labelledby="layout-heading">
+            <h2 id="layout-heading">Layout and Navigation</h2>
+            <p>The layout follows a logical reading order: header, nav, main content, and footer. Content is centered
+                for focus and broken into clear sections using semantic HTML elements. This enhances screen reader flow
+                and visual scanning.</p>
+            <p>The navigation is structured using a <code>&lt;nav&gt;</code> element with clear list items. Each link
+                uses descriptive text and supports visual hover/focus states for keyboard users. Active states are
+                styled with a different background to show selection clearly.</p>
+        </section>
+
+        <section aria-labelledby="content-heading">
+            <h2 id="content-heading">Content</h2>
+            <p>Content is structured using appropriate headings (h2–h4), clear paragraphs, and lists. The site maintains
+                legibility when zoomed to 200% and supports text resizing without breaking layout, thanks to relative
+                font units (em/rem) and a fluid grid.</p>
+            <p>I avoided placeholder-only instructions and made labels visible at all times. I used Bootstrap
+                selectively for layout grids and responsive design, but customized styles to avoid default
+                “Bootstrapish” aesthetics.</p>
+        </section>
+
+        <section aria-labelledby="structure-heading">
+            <h2 id="structure-heading">Structural Design and Accessibility</h2>
+
+            <aside>
+                <h3>Accessibility Techniques Used</h3>
+                <ul>
+                    <li>Semantic HTML5 regions: header, nav, main, section, aside, footer</li>
+                    <li>ARIA labels and IDs used to define landmarks and relationships</li>
+                    <li>Descriptive link text (e.g., “Contact Us” not just “Click here”)</li>
+                    <li>Visible keyboard focus styles and hover states</li>
+                    <li>Skip navigation link at the top (optional but recommended)</li>
+                    <li>Alt-text for all meaningful images</li>
+                    <li>Color contrast checked using tools like WebAIM Contrast Checker</li>
+                    <li>Tested with NVDA and keyboard-only navigation</li>
+                    <li>Used Flexbox and percentage-based widths to ensure responsive layout</li>
+                </ul>
+            </aside>
+
+            <p>I made sure each section used clear, semantic markup and tested with accessibility tools to validate
+                performance. Designing with inclusion in mind improves usability for everyone — not just users with
+                disabilities.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Christian Simpore – All rights reserved</p>
+    </footer>
+</body>
+
+</html>
