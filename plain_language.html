@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plain Language Guide</title>
     <link rel="stylesheet" href="style.css" />
+   
 </head>
 
 <body>
-
     <header role="banner">
         <nav role="navigation" aria-label="Main Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="plain_language.html">Plain Language</a></li>
+                <li class="current-page"><a href="plain_language.html" aria-current="page">Plain Language</a></li>
                 <li><a href="Design.html">Design</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
@@ -22,125 +22,171 @@
         </nav>
     </header>
 
+    <main role="main">
+        <header>
+            <h1>Plain Language Guide</h1>
+            <img src="images/communicating.webp"
+                alt="Illustration showing people communicating clearly with icons of speech bubbles, checklists, and simple text"
+                style="max-width: 100%; height: auto; margin-top: 10px;" />
+        </header>
 
-
-    <main>
-        <h1>Plain Language Guide</h1>
-
-
-        <section>
-            <h2>Introduction</h2>
-            <header>
-                <h1>Plain Language Guide</h1>
-                <img src="images/Braille Display.jpg"
-                    alt="Illustration showing people communicating clearly with icons of speech bubbles, checklists, and simple text"
-                    style="max-width: 100%; height: auto; margin-top: 10px;" />
-            </header>
-
+        <section aria-labelledby="intro-plain-language">
+            <h2 id="intro-plain-language">Introduction to Plain Language</h2>
             <p>
                 Plain language is a way of writing that makes it easier for everyone to understand your message the
-                first time they read or hear it.
-                It helps readers find what they need, understand what they find, and use it effectively. Plain language
-                matters because it builds trust, increases clarity, and ensures inclusivity for all types of
+                first time they read or hear it. It helps readers find what they need, understand what they find, and
+                use it effectively.
+                Plain language matters because it builds trust, increases clarity, and ensures inclusivity for all types
+                of
                 audiences—including those with cognitive, literacy, or language barriers.
             </p>
         </section>
 
-        <!-- Summary Section -->
-        <section>
-            <h2>Plain Language Summary</h2>
+        <section aria-labelledby="principles">
+            <h2 id="principles">Plain Language Principles</h2>
 
-            <h3>Audience Understanding</h3>
-            <p>
-                The first rule of plain language is to know who you're writing for. Think about what your audience
-                already knows, what they need, and how they prefer to get information.
-            </p>
+            <h3>1. Know Your Audience</h3>
+            <p>Understanding your audience is key to effective communication. Writers should tailor content to their
+                readers' needs, knowledge, and expectations.</p>
 
-            <h3>Clear Structure</h3>
-            <p>
-                Use headers, short paragraphs, and lists to organize content. This helps readers scan quickly and stay
-                focused.
-            </p>
+            <h3>2. Organize Content Clearly</h3>
+            <p>A well-structured document improves readability:</p>
+            <ul>
+                <li>Prioritize important information at the beginning</li>
+                <li>Use headings and subheadings to break up sections</li>
+                <li>Convert dense paragraphs into bullet points or numbered lists</li>
+            </ul>
 
-            <h3>Simple Words</h3>
-            <p>
-                Choose everyday words and avoid jargon or technical terms unless absolutely necessary. If you need to
-                use a technical term, define it clearly.
-            </p>
+            <h3>3. Use Simple, Direct Language</h3>
+            <p>Plain language avoids complex words, technical jargon, and long-winded sentences:</p>
+            <ul>
+                <li>Use familiar words and short sentences</li>
+                <li>Keep explanations straightforward</li>
+                <li>Define technical terms when necessary</li>
+            </ul>
 
-            <h3>Active Voice</h3>
-            <p>
-                Write sentences using the subject-verb-object order. For example, say "We send invoices every Friday"
-                instead of "Invoices are sent every Friday."
-            </p>
+            <h3>4. Prefer Active Voice</h3>
+            <p>Active voice makes sentences clearer and more engaging:</p>
+            <div class="example">
+                <p><strong>Passive:</strong> "The report was completed by the team."</p>
+                <p><strong>Active:</strong> "The team completed the report."</p>
+            </div>
 
-            <h3>Testing and Feedback</h3>
-            <p>
-                Once your content is written, test it with real users. Feedback helps you find unclear areas and improve
-                your message.
-            </p>
+            <h3>5. Maintain Consistency</h3>
+            <p>Consistency in tone, terminology, and formatting helps readers follow along without confusion.</p>
         </section>
 
-        <!-- Verbs Explained Section -->
-        <section>
-            <h2>Verbs Explained</h2>
+        <section aria-labelledby="examples">
+            <h2 id="examples">Plain Language Examples</h2>
+
+            <h3>Sentence Improvements</h3>
+            <table>
+                <caption>Examples of converting complex language to plain language</caption>
+                <thead>
+                    <tr>
+                        <th>Original</th>
+                        <th>Improved Version</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>The report on the environmental impact has been completed by the researchers.</td>
+                        <td>The researchers completed the environmental impact report.</td>
+                    </tr>
+                    <tr>
+                        <td>Evaluations are conducted annually to determine the efficacy of the educational programs.
+                        </td>
+                        <td>We evaluate education programs every year to see how well they work.</td>
+                    </tr>
+                    <tr>
+                        <td>Implementation of new regulations will have been carried out by the compliance team by the
+                            end of the year.</td>
+                        <td>The compliance team will implement the new regulations by year's end.</td>
+                    </tr>
+                    <tr>
+                        <td>The amelioration of the project's outcomes was achieved through meticulous data analysis to
+                            foster enhancement.</td>
+                        <td>The team improved the project's results by carefully analyzing the data.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Paragraph Improvements</h3>
+            <div class="example">
+                <h4>Original:</h4>
+                <p>Despite the widespread recognition of the importance of sustainability in corporate practices, there
+                    are numerous organizations that continue to prioritize short-term profits, which ultimately detracts
+                    from the long-term viability of both the companies and the communities in which they operate.</p>
+
+                <h4>Improved:</h4>
+                <p>Many organizations prioritize short-term profits over sustainability goals — which have been
+                    recognized as important — harming their long-term success and the communities they serve.</p>
+            </div>
+        </section>
+
+        <section aria-labelledby="verbs">
+            <h2 id="verbs">Verb Usage in Plain Language</h2>
 
             <h3>Why Verbs Matter</h3>
-            <p>
-                Verbs carry the action of a sentence and help the reader understand what needs to happen. Strong,
-                specific verbs improve clarity and guide the reader toward action.
-            </p>
+            <p>Verbs carry the action of a sentence and help the reader understand what needs to happen. Strong,
+                specific verbs improve clarity and guide the reader toward action.</p>
 
             <h3>Use Strong Action Verbs</h3>
-            <p>
-                Instead of using vague verbs like “do” or “make,” choose specific ones like “build,” “write,” or
-                “design.” This gives more meaning to your sentence.
-            </p>
+            <p>Instead of vague verbs like "do" or "make," choose specific ones like "build," "write," or "design."</p>
 
             <h3>Avoid Hidden Verbs</h3>
-            <p>
-                Hidden verbs are nouns formed from verbs—like “implementation” instead of “implement.” Turn them back
-                into action verbs to make your writing more direct.
-                <br>
-                <strong>Example:</strong> “We will begin the implementation of the program.” → “We will implement the
-                program.”
-            </p>
+            <p>Hidden verbs are nouns formed from verbs—like "implementation" instead of "implement." Turn them back
+                into action verbs:</p>
+            <div class="example">
+                <p><strong>Before:</strong> "We will begin the implementation of the program."</p>
+                <p><strong>After:</strong> "We will implement the program."</p>
+            </div>
+
+            <h3>Verb Tense Guidelines</h3>
+            <table>
+                <caption>Recommended verb tenses for clear communication</caption>
+                <thead>
+                    <tr>
+                        <th>Tense</th>
+                        <th>Example</th>
+                        <th>When to Use</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Simple Present</td>
+                        <td>She writes reports weekly.</td>
+                        <td>Habits, general truths</td>
+                    </tr>
+                    <tr>
+                        <td>Simple Past</td>
+                        <td>She wrote the report yesterday.</td>
+                        <td>Completed actions</td>
+                    </tr>
+                    <tr>
+                        <td>Simple Future</td>
+                        <td>She will write the report tomorrow.</td>
+                        <td>Upcoming actions</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
-        <!-- Examples Section -->
-        <section>
-            <h2>Examples</h2>
-
-            <h3>Example 1: Use Headings to Guide Readers</h3>
-            <p>
-                Without clear headings, readers can get lost in walls of text. Break your document into sections with
-                short, descriptive headers.
-                <br>
-                <strong>Before:</strong> A long email with no paragraph breaks or headings. <br>
-                <strong>After:</strong> Use "Payment Info," "Next Steps," and "Help" as section titles.
-            </p>
-
-            <h3>Example 2: Prefer Active Voice</h3>
-            <p>
-                Passive voice makes writing harder to follow. Use active voice to be clear about who’s doing what.
-                <br>
-                <strong>Before:</strong> “The report was written by the team.” <br>
-                <strong>After:</strong> “The team wrote the report.”
-            </p>
-
-            <h3>Example 3: Keep Sentences Short</h3>
-            <p>
-                Long sentences are harder to follow. Aim for one idea per sentence.
-                <br>
-                <strong>Before:</strong> “In order to submit your application, you must fill out the form and return it
-                via email no later than May 1st.” <br>
-                <strong>After:</strong> “Fill out the form and email it by May 1st to apply.”
-            </p>
+        <section aria-labelledby="resources">
+            <h2 id="resources">Additional Resources</h2>
+            <ul>
+                <li><a href="https://www.plainlanguage.gov/">PlainLanguage.gov</a> - U.S. government guidelines</li>
+                <li><a href="https://www.w3.org/WAI/tips/writing/">W3C Writing Tips</a> - Web accessibility guidelines
+                </li>
+                <li><a href="https://www.plainenglish.co.uk/">Plain English Campaign</a> - International plain language
+                    resources</li>
+            </ul>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Christian Simpore. All rights reserved.</p>
+    <footer role="contentinfo">
+        <p>&copy; 2025 Plain Language Guide. All rights reserved.</p>
+        <p>Content adapted from Information Design assignment materials and plain language best practices.</p>
     </footer>
 </body>
 

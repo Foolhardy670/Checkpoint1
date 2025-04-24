@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Accessibility Hub - Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,7 +12,7 @@
     <header role="banner">
         <nav role="navigation" aria-label="Main Navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li class="current-page"><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="plain_language.html">Plain Language</a></li>
                 <li><a href="Design.html">Design</a></li>
                 <li><a href="about.html">About Me</a></li>
@@ -29,6 +29,106 @@
                 States, 19.7% live below the poverty line, nearly double the national average. Lower employment rates
                 contribute to this disparity, with only 25.9% of disabled individuals over 16 employed in the civilian
                 sector, compared to 59.6% of all U.S. citizens.</p>
+
+            <figure>
+                <img src="images/Braille Display.jpg"
+                    alt="Bar chart showing disability rates by age group in the U.S.">
+                <figcaption>
+                    Disability rates by age group in the U.S. (Source: Census Bureau)
+                    <a href="long-description.html#disability-chart">View long description</a>
+                </figcaption>
+            </figure>
+
+            <h3>Disability Statistics by State</h3>
+            <table>
+                <caption>Disability Rates by State (Top 5 and Bottom 5)</caption>
+                <thead>
+                    <tr>
+                        <th>State</th>
+                        <th>Disability Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>West Virginia</td>
+                        <td>19.8%</td>
+                    </tr>
+                    <tr>
+                        <td>Kentucky</td>
+                        <td>17.8%</td>
+                    </tr>
+                    <tr>
+                        <td>Arkansas</td>
+                        <td>17.5%</td>
+                    </tr>
+                    <tr>
+                        <td>Mississippi</td>
+                        <td>17.1%</td>
+                    </tr>
+                    <tr>
+                        <td>Alabama</td>
+                        <td>16.9%</td>
+                    </tr>
+                    <tr>
+                        <td>Utah</td>
+                        <td>10.3%</td>
+                    </tr>
+                    <tr>
+                        <td>Minnesota</td>
+                        <td>10.5%</td>
+                    </tr>
+                    <tr>
+                        <td>North Dakota</td>
+                        <td>10.6%</td>
+                    </tr>
+                    <tr>
+                        <td>New Jersey</td>
+                        <td>10.7%</td>
+                    </tr>
+                    <tr>
+                        <td>California</td>
+                        <td>10.8%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Disability Types Prevalence</h3>
+            <table>
+                <caption>Types of Disabilities in the U.S. Population</caption>
+                <thead>
+                    <tr>
+                        <th>Disability Type</th>
+                        <th>Percentage of Population</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mobility</td>
+                        <td>6.6%</td>
+                    </tr>
+                    <tr>
+                        <td>Cognitive</td>
+                        <td>5.2%</td>
+                    </tr>
+                    <tr>
+                        <td>Independent Living</td>
+                        <td>4.3%</td>
+                    </tr>
+                    <tr>
+                        <td>Hearing</td>
+                        <td>3.6%</td>
+                    </tr>
+                    <tr>
+                        <td>Vision</td>
+                        <td>2.4%</td>
+                    </tr>
+                    <tr>
+                        <td>Self-Care</td>
+                        <td>2.1%</td>
+                    </tr>
+                </tbody>
+            </table>
+
             <p>Utah, in comparison, has a disabled population of 10.3%, which is lower than the national average of 13%.
                 Representation by race also varies, with higher occurrences of disabilities in some minority communities
                 in Utah compared to national figures.</p>
@@ -39,9 +139,9 @@
             <p>With over 40 million people in the U.S. living with disabilities, accessible web design is essential. A
                 well-designed website ensures inclusivity, allowing everyone to access information and services
                 seamlessly.</p>
-                <img src="images/Elevator Picture.jpg"
-                    alt="Illustration showing people communicating clearly with icons of speech bubbles, checklists, and simple text"
-                    style="max-width: 100%; height: auto; margin-top: 10px;" />
+            <img src="images/Elevator Picture.jpg"
+                alt="Illustration showing people communicating clearly with icons of speech bubbles, checklists, and simple text"
+                style="max-width: 100%; height: auto; margin-top: 10px;" />
         </section>
 
         <section aria-labelledby="universal-design">
@@ -51,35 +151,52 @@
                     - Tim Berners-Lee</p>
             </blockquote>
             <p>This website applies the principles of Universal Design, as defined by Ronald Mace and his team:</p>
-            <ul>
-                <li><strong>Equitable Use</strong>: The design is useful and marketable to people with diverse
-                    abilities.</li>
-                <li><strong>Flexibility in Use</strong>: The design accommodates a wide range of individual preferences
-                    and abilities.</li>
-                <li><strong>Simple and Intuitive Use</strong>: The design is easy to understand, regardless of the
-                    user’s experience or knowledge.</li>
-                <li><strong>Perceptible Information</strong>: The design communicates necessary information effectively
-                    to all users.</li>
-                <li><strong>Tolerance for Error</strong>: The design minimizes hazards and unintended consequences.</li>
-                <li><strong>Low Physical Effort</strong>: The design can be used efficiently and comfortably.</li>
-                <li><strong>Size and Space for Approach and Use</strong>: The design provides appropriate size and space
-                    for all users.</li>
-            </ul>
+
+            <dl>
+                <dt><strong>Equitable Use</strong></dt>
+                <dd>The design is useful and marketable to people with diverse abilities.</dd>
+
+                <dt><strong>Flexibility in Use</strong></dt>
+                <dd>The design accommodates a wide range of individual preferences and abilities.</dd>
+
+                <dt><strong>Simple and Intuitive Use</strong></dt>
+                <dd>The design is easy to understand, regardless of the user's experience or knowledge.</dd>
+
+                <dt><strong>Perceptible Information</strong></dt>
+                <dd>The design communicates necessary information effectively to all users.</dd>
+
+                <dt><strong>Tolerance for Error</strong></dt>
+                <dd>The design minimizes hazards and unintended consequences.</dd>
+
+                <dt><strong>Low Physical Effort</strong></dt>
+                <dd>The design can be used efficiently and comfortably.</dd>
+
+                <dt><strong>Size and Space for Approach and Use</strong></dt>
+                <dd>The design provides appropriate size and space for all users.</dd>
+            </dl>
         </section>
 
         <section aria-labelledby="resources">
             <h2 id="resources">Additional Resources</h2>
             <p>For more information on accessibility and disability statistics, visit the following sources:</p>
             <ul>
-                <li><a href="https://data.census.gov/cedsci/">U.S. Census Bureau</a></li>
-                <li><a href="https://www.w3.org/WAI/">W3C Web Accessibility Initiative</a></li>
-                <li><a href="https://www.ada.gov/">Americans with Disabilities Act (ADA)</a></li>
+                <li><a href="https://data.census.gov/cedsci/">U.S. Census Bureau - Disability Data</a> (2021 American
+                    Community Survey)</li>
+                <li><a href="https://www.w3.org/WAI/">W3C Web Accessibility Initiative (WAI)</a> - Web Content
+                    Accessibility Guidelines (WCAG) 2.1</li>
+                <li><a href="https://www.ada.gov/">Americans with Disabilities Act (ADA)</a> - U.S. Department of
+                    Justice</li>
+                <li><a href="https://www.cdc.gov/ncbddd/disabilityandhealth/infographic-disability-impacts-all.html">CDC
+                        Disability Impacts All</a> - Centers for Disease Control and Prevention</li>
+                <li><a href="https://www.dol.gov/agencies/odep">Office of Disability Employment Policy</a> - U.S.
+                    Department of Labor</li>
             </ul>
         </section>
     </main>
 
     <footer role="contentinfo">
-        <p>&copy; 2025 Company. All rights reserved.</p>
+        <p>&copy; 2025 Accessibility Hub. All rights reserved.</p>
+        <p>Sources: U.S. Census Bureau (2021), CDC Disability Reports (2022), ADA National Network (2023)</p>
     </footer>
 </body>
 
